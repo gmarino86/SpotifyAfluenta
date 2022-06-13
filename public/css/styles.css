@@ -21,18 +21,29 @@ nav {
     border-color: #0082ab;
 }
 
+
 .grid-item {
     width: 100%;
+    margin: auto;
 }
 
-@media (min-width: 512px) {
+@media (min-width: 433px) {
     .grid-item {
         width: 50%;
+        margin: auto;
     }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 768px) {
     .grid-item {
         width: 33%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-item {
+        width: 25%;
+        margin: auto;
     }
 }
