@@ -80,12 +80,14 @@ class SpotifyHelper
     {
         $discography = array();
         foreach ($albums->items as $album) {
+            //dd($album);
             $discography[] = array(
                 "artist_name" => $album->artists[0]->name,
                 "name" => $album->name,
                 "released" => $album->release_date,
                 "tracks" => $album->total_tracks,
-                "cover" => (isset($album->images[0]) ? $album->images[0] : 'NULL')
+                "cover" => (isset($album->images[0]) ? $album->images[0] : 'NULL'),
+                "url_spotify" => $album->external_urls->spotify
             );
         }
 

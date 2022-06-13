@@ -12,8 +12,9 @@
             <img src="{{ $disco['cover']->url }}" class="card-img-top" alt="{{ $disco['artist_name'] }}" width="200" height="200"/>
             <div class="card-body">
                 <h2 class="card-title">{{ $disco['artist_name'] }}</h2>
-                <p class="card-text">{{ $disco['name'] }}</p>
-                <small class="text-muted">Año: {{ $disco['released'] }}</small>
+                <a href="{{ $disco['url_spotify'] }}">{{ $disco['name'] }}</a>
+                <hr>
+                <small class="text-muted">Año lanzamiento: {{ $disco['released'] }}</small>
             </div>
         </div>
     <?php 
