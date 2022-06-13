@@ -1,0 +1,38 @@
+body {
+    background-color: #84807d;
+}
+
+nav {
+    background-color: #15243b !important;
+}
+
+.btn-borrow {
+    color: #fff;
+    background-color: #00b0e8;
+    border-color: #00b0e8;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.1rem;
+}
+
+.btn-borrow:hover {
+    color: #fff;
+    background-color: #0089b5;
+    border-color: #0082ab;
+}
+
+.grid-item {
+    width: 100%;
+}
+
+@media (min-width: 512px) {
+    .grid-item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 980px) {
+    .grid-item {
+        width: 33%;
+    }
+}
